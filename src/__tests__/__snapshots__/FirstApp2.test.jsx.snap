@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test in <FirstApp/> > should match with snaps hot 1`] = `
+<div>
+  <main
+    class="container"
+  >
+    <h1>
+      FirstApp
+    </h1>
+    <h2
+      data-testid="test-subtitle"
+    >
+       
+       
+    </h2>
+    <span
+      style="background-color: red;"
+    >
+      Inactivo
+    </span>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem id debitis ad consequuntur, nulla voluptates deserunt voluptatibus consequatur rerum incidunt voluptatum soluta accusantium. Itaque, ipsum nostrum enim voluptate porro doloribus.
+    </p>
+  </main>
+</div>
+`;
+
+exports[`Test in <FirstApp/> > should match with snapshot 1`] = `
+<div>
+  <main
+    class="container"
+  >
+    <h1>
+      FirstApp
+    </h1>
+    <h2
+      data-testid="test-subtitle"
+    >
+       
+       
+    </h2>
+    <span
+      style="background-color: red;"
+    >
+      Inactivo
+    </span>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem id debitis ad consequuntur, nulla voluptates deserunt voluptatibus consequatur rerum incidunt voluptatum soluta accusantium. Itaque, ipsum nostrum enim voluptate porro doloribus.
+    </p>
+  </main>
+</div>
+`;

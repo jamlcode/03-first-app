@@ -10,16 +10,24 @@ export default function CounterApp({ initialValue= 10 }) {
     <main className='container'>
         <div>
             <h1>CounterApp</h1>
-            <kbd> { value } </kbd>
+            <kbd data-testid="test-initialValue"> { value } </kbd>
         </div>
         <footer style={{ marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '1rem'  }} >
             <button 
+                data-testid="test-increment"
                 onClick={ increment }
-            > +1 </button>
+                > +1 </button>
             <button 
+                data-testid="test-decrement"
                 onClick={ decrement }
             > -1 </button>
-            <button onClick={ reset } > Reset </button>
+            <button
+                data-testid="test-reset" 
+                disabled={ value === initialValue } 
+                onClick={ reset } 
+            >
+                 Reset 
+            </button>
         </footer>
     </main>
   )

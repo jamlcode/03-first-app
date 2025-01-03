@@ -12,18 +12,17 @@ export default function FirstApp({
     value: 'inactive',
     label: 'Inactivo'
   },
-  name,
+  subtitle,
 }) {
   return (
-    <>
-      <h1>FirstApp</h1>
-      <h2>{title}</h2>
+    <main className='container'>
+      <h1>{title}</h1>
+      <h2 data-testid='test-subtitle' > {subtitle} </h2>
       <span style={{ backgroundColor: state.value === 'active' ? 'green' : 'red' }} >{state.label}</span>
-      <p>{name}</p>
       {/* <code>{JSON.stringify(newMessage)}</code> */}
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem id debitis ad consequuntur, nulla voluptates deserunt voluptatibus consequatur rerum incidunt voluptatum soluta accusantium. Itaque, ipsum nostrum enim voluptate porro doloribus.
       </p>
-    </>
+    </main>
   )
 }
 
@@ -32,8 +31,8 @@ FirstApp.propTypes = {
   state: PropTypes.shape({
     value: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired
-  }).isRequired,
-  name: PropTypes.string,
+  }),
+  subtitle: PropTypes.string,
 }
 
 /**
@@ -45,5 +44,5 @@ FirstApp.propTypes = {
 //     value: 'inactive',
 //     label: 'Inactivo'
 //   },
-//   name: 'Goku'
+//   subtitle: 'Goku'
 // }

@@ -5,7 +5,7 @@ export const getHeroAsync = (id) => {
         setTimeout(() => {
             const hero = getHeroById(id);
             if ( typeof hero === 'undefined' ) {
-                reject(`Hero whit id: ${id} not found`)
+                reject(`Hero with id: ${id} not found`)
             } else {
                 resolve(hero)
             }
